@@ -1,0 +1,193 @@
+/* Catppuccin for Nextcloud 32 — auto dark/light toggle
+   Dark mode: Mocha  |  Light mode: Latte
+   Built against NC 32.0.8 variable schema. */
+
+/* ── DARK MODE: Catppuccin Mocha ─────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Header bar */
+    --color-background-plain: #181825;
+    --color-background-plain-text: #cdd6f4;
+
+    /* Main backgrounds */
+    --color-main-background: #1e1e2e;
+    --color-main-background-rgb: 30,30,46;
+    --color-main-background-translucent: rgba(30, 30, 46, .97);
+    --color-main-background-blur: rgba(30, 30, 46, .85);
+    --gradient-main-background: var(--color-main-background) 0%, var(--color-main-background-translucent) 85%, transparent 100%;
+    --color-background-hover: #313244;
+    --color-background-dark: #181825;
+    --color-background-darker: #11111b;
+    --color-placeholder-light: #313244;
+    --color-placeholder-dark: #45475a;
+
+    /* Text */
+    --color-main-text: #cdd6f4;
+    --color-text-maxcontrast: #bac2de;
+    --color-text-maxcontrast-default: #bac2de;
+    --color-text-maxcontrast-background-blur: #a6adc8;
+    --color-text-error: #f38ba8;
+    --color-text-success: #a6e3a1;
+
+    /* Borders */
+    --color-border: #313244;
+    --color-border-dark: #45475a;
+    --color-border-maxcontrast: #585b70;
+    --color-border-error: #f38ba8;
+    --color-border-success: #a6e3a1;
+
+    /* Scrollbar */
+    --color-scrollbar: #585b70 transparent;
+
+    /* Element colors — saturated, for icons/badges */
+    --color-element-error: #f38ba8;
+    --color-element-info: #89b4fa;
+    --color-element-success: #a6e3a1;
+    --color-element-warning: #f9e2af;
+
+    /* Status backgrounds — dark tints */
+    --color-error: #3d1a24;
+    --color-error-hover: #4d2030;
+    --color-error-text: #f38ba8;
+    --color-error-rgb: 61,26,36;
+    --color-warning: #3d3010;
+    --color-warning-hover: #4a3a18;
+    --color-warning-text: #f9e2af;
+    --color-warning-rgb: 61,48,16;
+    --color-success: #1a3020;
+    --color-success-hover: #1f3a26;
+    --color-success-text: #a6e3a1;
+    --color-success-rgb: 26,48,32;
+    --color-info: #1a2535;
+    --color-info-hover: #1e2c40;
+    --color-info-text: #89b4fa;
+    --color-info-rgb: 26,37,53;
+
+    /* Loading spinner */
+    --color-loading-light: #585b70;
+    --color-loading-dark: #bac2de;
+
+    /* Box shadow */
+    --color-box-shadow-rgb: 0,0,0;
+    --color-box-shadow: rgba(0, 0, 0, 0.5);
+
+    /* Primary / accent — Mocha Mauve */
+    --color-primary: #cba6f7;
+    --color-primary-text: #1e1e2e;
+    --color-primary-hover: #b4befe;
+    --gradient-primary-background: linear-gradient(40deg, #cba6f7 0%, #b4befe 100%);
+    --color-primary-element: #cba6f7;
+    --color-primary-element-hover: #b4befe;
+    --color-primary-element-text: #1e1e2e;
+    --color-primary-element-text-dark: #181825;
+    --color-primary-light: rgba(203, 166, 247, 0.15);
+    --color-primary-light-hover: rgba(203, 166, 247, 0.25);
+    --color-primary-light-text: #cba6f7;
+    --color-primary-element-light: rgba(203, 166, 247, 0.15);
+    --color-primary-element-light-text: #cba6f7;
+    --color-primary-element-light-hover: rgba(203, 166, 247, 0.25);
+
+    /* Icon inversion — dark background: invert dark icons to white */
+    --color-favorite: #f9e2af;
+    --background-invert-if-dark: invert(100%);
+    --background-invert-if-bright: no;
+    --background-image-invert-if-bright: no;
+    --primary-invert-if-bright: no;
+    --primary-invert-if-dark: invert(100%);
+  }
+}
+
+/* ── LIGHT MODE: Catppuccin Latte ────────────────────────── */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Header bar */
+    --color-background-plain: #e6e9ef;
+    --color-background-plain-text: #4c4f69;
+
+    /* Main backgrounds */
+    --color-main-background: #eff1f5;
+    --color-main-background-rgb: 239,241,245;
+    --color-main-background-translucent: rgba(239, 241, 245, .97);
+    --color-main-background-blur: rgba(239, 241, 245, .85);
+    --gradient-main-background: var(--color-main-background) 0%, var(--color-main-background-translucent) 85%, transparent 100%;
+    --color-background-hover: #ccd0da;
+    --color-background-dark: #e6e9ef;
+    --color-background-darker: #dce0e8;
+    --color-placeholder-light: #ccd0da;
+    --color-placeholder-dark: #bcc0cc;
+
+    /* Text */
+    --color-main-text: #4c4f69;
+    --color-text-maxcontrast: #5c5f77;
+    --color-text-maxcontrast-default: #5c5f77;
+    --color-text-maxcontrast-background-blur: #6c6f85;
+    --color-text-error: #d20f39;
+    --color-text-success: #40a02b;
+
+    /* Borders */
+    --color-border: #ccd0da;
+    --color-border-dark: #bcc0cc;
+    --color-border-maxcontrast: #acb0be;
+    --color-border-error: #d20f39;
+    --color-border-success: #40a02b;
+
+    /* Scrollbar */
+    --color-scrollbar: #acb0be transparent;
+
+    /* Element colors */
+    --color-element-error: #d20f39;
+    --color-element-info: #1e66f5;
+    --color-element-success: #40a02b;
+    --color-element-warning: #df8e1d;
+
+    /* Status backgrounds — light tints */
+    --color-error: #fce0e4;
+    --color-error-hover: #f9c8cf;
+    --color-error-text: #d20f39;
+    --color-error-rgb: 252,224,228;
+    --color-warning: #fdf0d8;
+    --color-warning-hover: #fbe3b8;
+    --color-warning-text: #df8e1d;
+    --color-warning-rgb: 253,240,216;
+    --color-success: #dff3de;
+    --color-success-hover: #c9ecc7;
+    --color-success-text: #40a02b;
+    --color-success-rgb: 223,243,222;
+    --color-info: #daeeff;
+    --color-info-hover: #c0e5ff;
+    --color-info-text: #1e66f5;
+    --color-info-rgb: 218,238,255;
+
+    /* Loading spinner */
+    --color-loading-light: #bcc0cc;
+    --color-loading-dark: #5c5f77;
+
+    /* Box shadow */
+    --color-box-shadow-rgb: 76,79,105;
+    --color-box-shadow: rgba(76, 79, 105, 0.3);
+
+    /* Primary / accent — Latte Mauve (darker for light bg contrast) */
+    --color-primary: #8839ef;
+    --color-primary-text: #ffffff;
+    --color-primary-hover: #7928db;
+    --gradient-primary-background: linear-gradient(40deg, #8839ef 0%, #7928db 100%);
+    --color-primary-element: #8839ef;
+    --color-primary-element-hover: #7928db;
+    --color-primary-element-text: #ffffff;
+    --color-primary-element-text-dark: #eeeeee;
+    --color-primary-light: rgba(136, 57, 239, 0.12);
+    --color-primary-light-hover: rgba(136, 57, 239, 0.22);
+    --color-primary-light-text: #8839ef;
+    --color-primary-element-light: rgba(136, 57, 239, 0.12);
+    --color-primary-element-light-text: #8839ef;
+    --color-primary-element-light-hover: rgba(136, 57, 239, 0.22);
+
+    /* Icon inversion — light background: invert light icons to dark */
+    --color-favorite: #df8e1d;
+    --background-invert-if-dark: no;
+    --background-invert-if-bright: invert(100%);
+    --background-image-invert-if-bright: invert(100%);
+    --primary-invert-if-bright: invert(100%);
+    --primary-invert-if-dark: no;
+  }
+}
